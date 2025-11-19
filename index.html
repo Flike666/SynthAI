@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SynthAI · AI 驱动化合物创新平台</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero" id="top">
+      <nav class="navbar">
+        <div class="logo">SynthAI</div>
+        <ul class="nav-links">
+          <li><a href="#overview">概述</a></li>
+          <li><a href="#background">背景</a></li>
+          <li><a href="#solution">方案</a></li>
+          <li><a href="#technology">技术</a></li>
+          <li><a href="#advantages">优势</a></li>
+          <li><a href="#competition">竞品</a></li>
+        </ul>
+        <a class="cta" href="#contact">预约演示</a>
+        <button class="nav-toggle" aria-label="展开导航">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+      <div class="hero-content">
+        <div class="hero-text">
+          <span class="hero-tag">AI 驱动化学 · 量子仿真 · LLM 协同决策</span>
+          <h1>重构化合物合成的<span>端到端智能平台</span></h1>
+          <p>
+            SynthAI 将 SynFormer、FlowER、QUARC、ML-DFT、ICEBERG 五大核心模型与大型语言模型智能体深度融合，
+            打通“设计-机理-量子-光谱-工艺”全链路，帮助药企与科研机构大幅缩短药物研发周期、降低成本并提升成功率。
+          </p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#solution">了解全流程方案</a>
+            <a class="btn secondary" href="#technology">查看技术架构</a>
+            <button class="btn accent try-btn" type="button">点击试用SynthAI</button>
+          </div>
+          <ul class="hero-highlights">
+            <li><strong>60%</strong> 合成周期缩短</li>
+            <li><strong>45%</strong> 研发成本降低</li>
+            <li><strong>88%</strong> 合成成功率提升</li>
+          </ul>
+        </div>
+        <div class="hero-visual">
+          <div class="glow"></div>
+          <div class="dashboard">
+            <div class="dashboard-header">
+              <span>化学智能指挥台</span>
+              <div class="status">自动协同</div>
+            </div>
+            <div class="dashboard-body">
+              <div class="panel">
+                <h3>分子生成 · SynFormer</h3>
+                <p>100% 可合成候选与路径</p>
+              </div>
+              <div class="panel">
+                <h3>机理推演 · FlowER</h3>
+                <p>遵循质量与电子守恒的逐步反应</p>
+              </div>
+              <div class="panel">
+                <h3>工艺推荐 · QUARC</h3>
+                <p>催化剂/溶剂/温度一键输出</p>
+              </div>
+            </div>
+            <div class="dashboard-footer">
+              <span>虚拟验证通过率</span>
+              <strong>≥ 92% LLM 智能审阅</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="overview" class="section overview">
+        <div class="section-header">
+          <h2>项目概述</h2>
+          <p>
+            药物研发长周期、高成本、低成功率的“双十定律”正在制约产业升级。SynthAI 构建“分子结构—反应机理—量子性质—光谱特征—合成工艺”五大中间层，
+            以 AI 智能体驱动化合物全流程创新，成为破解“试错式”研发困境的关键基础设施。
+          </p>
+        </div>
+        <div class="vision-grid">
+          <article class="card">
+            <h3>产业痛点</h3>
+            <ul>
+              <li>平均 10-15 年研发周期、单药成本超 20 亿美元</li>
+              <li>合成路线依赖专家经验，试错迭代耗时耗费</li>
+              <li>候选化合物上市转化率不足 10%</li>
+              <li>结构解析与杂质控制效率低，难以规模化复制</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>平台定位</h3>
+            <ul>
+              <li>AI 驱动化合物“设计-合成-验证”端到端智能平台</li>
+              <li>五层中间层协同，消除化学研发信息孤岛</li>
+              <li>LLM 智能体统筹专业模型，提供类专家决策体验</li>
+              <li>支持药企、高校、初创的多场景部署与协作</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>可量化价值</h3>
+            <ul>
+              <li>小分子合成周期缩短 60%+</li>
+              <li>研发成本平均降低 45%</li>
+              <li>合成成功率提升至 88% 以上</li>
+              <li>未知结构解析效率提升 5 倍</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="background" class="section background">
+        <div class="section-header">
+          <h2>行业背景与战略机遇</h2>
+          <p>
+            全球生命科学 AI 竞争进入白热化阶段，国内生物医药亟需自主可控的化合物创新平台。SynthAI 呼应市场需求、国家战略与政策导向，抓住 AI+医药 的历史窗口期。
+          </p>
+        </div>
+        <div class="background-grid">
+          <article class="card background-card">
+            <h3>市场需求 · 破解“双十定律”</h3>
+            <ul>
+              <li>平均投入 20-30 亿美元、10-15 年才能上市的新药模式不可持续</li>
+              <li>传统“设计-制备-测试-分析”循环效率低、成本高、失败率高</li>
+              <li>AI 可在虚拟化学空间快速筛选候选分子，将发现周期从数年缩短至数月</li>
+            </ul>
+          </article>
+          <article class="card background-card">
+            <h3>战略需要 · 自主可控</h3>
+            <ul>
+              <li>化合物研发核心技术长期依赖进口，产业链“卡脖子”突出</li>
+              <li>AI 能够发掘中国人群特异靶点，助力精准药物与国产创新</li>
+              <li>推动我国从“医药制造”向“医药创新”跃迁，实现弯道超车</li>
+            </ul>
+          </article>
+          <article class="card background-card">
+            <h3>政策导向 · 国家战略背书</h3>
+            <ul>
+              <li>《健康中国2030》《“十四五”生物经济规划》明确提出 AI 赋能药物研发</li>
+              <li>“新工科”建设强调跨学科人才与交叉创新</li>
+              <li>NMPA 鼓励真实世界证据与模型引导的药物开发，为 AI 转化提供绿色通道</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="solution" class="section solution">
+        <div class="section-header">
+          <h2>解决方案与功能矩阵</h2>
+          <p>
+            SynthAI 围绕化合物合成设计、机理验证、实验落地与结构解析，构建六大标准化模块与一套定制化服务，形成从概念到工艺落地的闭环能力。
+          </p>
+        </div>
+        <div class="module-grid">
+          <article class="module-card">
+            <h3>智能化合物设计引擎 · SynFormer</h3>
+            <p>生成兼具高活性与高可合成性的候选分子，并输出对应合成路径。</p>
+            <ul>
+              <li>输入目标性质或工艺约束快速给出候选库</li>
+              <li>预筛成药性与毒性指标，确保可落地</li>
+              <li>Top 50 分子附带完整合成步骤</li>
+            </ul>
+          </article>
+          <article class="module-card">
+            <h3>反应机理验证 · FlowER</h3>
+            <p>以电子流守恒为核心，输出逐步反应机理与中间体结构。</p>
+            <ul>
+              <li>自动生成 SMILES 级机理路径与电子转移图</li>
+              <li>解释未知底物的反应路线，避免化学幻觉</li>
+              <li>支持机理可视化与杂质来源分析</li>
+            </ul>
+          </article>
+          <article class="module-card">
+            <h3>量子性质仿真 · ML-DFT</h3>
+            <p>以机器学习加速量子化学计算，量化热力学与动力学可行性。</p>
+            <ul>
+              <li>毫秒级估算反应能垒与吉布斯自由能</li>
+              <li>提供电子云、键能等可视化数据</li>
+              <li>确保每步反应遵循物理定律</li>
+            </ul>
+          </article>
+          <article class="module-card">
+            <h3>实验方案智能生成 · QUARC</h3>
+            <p>将机理路径转化为可执行的实验配方，支持小试与放大生产。</p>
+            <ul>
+              <li>自动推荐催化剂、溶剂、温度与剂量</li>
+              <li>基于 Pistachio 专利数据训练，覆盖 60+ 反应类型</li>
+              <li>提供条件敏感性分析与替代方案</li>
+            </ul>
+          </article>
+          <article class="module-card">
+            <h3>光谱预测与结构解析 · ICEBERG</h3>
+            <p>提前生成虚拟光谱指纹，加速未知化合物的结构确证。</p>
+            <ul>
+              <li>MS/MS 多能量谱图预测与碎片注释</li>
+              <li>实验光谱反推结构，给出 Top 5 可能结果</li>
+              <li>集成 NIST 与药物杂质库快速匹配</li>
+            </ul>
+          </article>
+          <article class="module-card">
+            <h3>迭代优化工作台</h3>
+            <p>构建“实验-反馈-优化”闭环，持续提升合成与解析效率。</p>
+            <ul>
+              <li>自动分析产率、杂质与光谱异常</li>
+              <li>LLM 协同 SynFormer/QUARC/ICEBERG 给出优化建议</li>
+              <li>沉淀实验台账，支持知识复用</li>
+            </ul>
+          </article>
+          <article class="module-card">
+            <h3>数据管理与定制服务</h3>
+            <p>保障数据安全可控，并提供模型微调、私有化部署与联合攻关。</p>
+            <ul>
+              <li>多格式数据资产化与权限管理</li>
+              <li>专利检索提示创新点与风险</li>
+              <li>针对特定反应/分子类型的模型微调</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="technology" class="section technology">
+        <div class="section-header">
+          <h2>核心技术架构</h2>
+          <p>
+            SynthAI 以多模型协同为底座，由 LLM 智能体统筹决策，实现从分子设计到实验验证的自适应流程，兼顾科学严谨性与工程效率。
+          </p>
+        </div>
+        <div class="architecture-grid">
+          <article class="layer-card">
+            <h3>SynFormer · 分子结构层</h3>
+            <p>
+              结合 Transformer 与扩散模型直接生成具备可合成性的分子与路径，在大规模反应语料上学习结构与工艺的映射关系。
+            </p>
+            <ul>
+              <li>面向目标性质的分子全局探索</li>
+              <li>可合成性约束与基元组合策略</li>
+              <li>支持新骨架与替代分子发现</li>
+            </ul>
+          </article>
+          <article class="layer-card">
+            <h3>FlowER · 反应机理层</h3>
+            <p>
+              通过流匹配模拟电子在键间的重新分配，生成遵循守恒定律的反应步骤，对未见反应类型也具备泛化能力。
+            </p>
+            <ul>
+              <li>逐步机理序列与电子转移可视化</li>
+              <li>支持杂质追踪与路径分支探索</li>
+              <li>少量数据即可完成场景微调</li>
+            </ul>
+          </article>
+          <article class="layer-card">
+            <h3>ML-DFT · 量子性质层</h3>
+            <p>
+              以机器学习代理替代昂贵的从头算，提供接近第一性原理精度的能量、构型与电子性质评估，实现实时物理校验。
+            </p>
+            <ul>
+              <li>能量面扫描与过渡态预测</li>
+              <li>热力学/动力学多指标打分</li>
+              <li>支持可视化电子密度与键能变化</li>
+            </ul>
+          </article>
+          <article class="layer-card">
+            <h3>QUARC · 合成工艺层</h3>
+            <p>
+              将反应条件推荐拆分为试剂组合与操作参数子任务，输出可直接执行的实验方案，涵盖工业化需求。
+            </p>
+            <ul>
+              <li>试剂、催化剂、溶剂与剂量精细推荐</li>
+              <li>温度、时间等操作参数数值化输出</li>
+              <li>支持替代与放大策略建议</li>
+            </ul>
+          </article>
+          <article class="layer-card">
+            <h3>ICEBERG · 光谱特征层</h3>
+            <p>
+              模拟碰撞诱导解离的碎片生成过程，输出高置信度的质谱预测，可扩展至 NMR/IR 等多模态光谱。
+            </p>
+            <ul>
+              <li>碎片离子强度与结构注释</li>
+              <li>实验谱图相似度检索</li>
+              <li>杂质与代谢物快速识别</li>
+            </ul>
+          </article>
+        </div>
+        <div class="orchestration-card">
+          <h3>LLM 智能体协同调度</h3>
+          <p>
+            定制化大型语言模型作为平台“大脑”，理解研发目标、串联模型接口，形成动态迭代的任务链；结合实验反馈持续学习，越用越聪明。
+          </p>
+          <ul>
+            <li>自然语言交互 + 专业报告生成</li>
+            <li>异常自动诊断与流程自适应调整</li>
+            <li>与机器人实验室、外部模型无缝对接</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="advantages" class="section advantages">
+        <div class="section-header">
+          <h2>技术先进性与护城河</h2>
+          <p>
+            SynthAI 在架构集成度、方案落地性、仿真深度与智能协同上构建差异化优势，并以数据与生态形成可持续的技术壁垒。
+          </p>
+        </div>
+        <div class="advantage-columns">
+          <div class="advantage-column">
+            <h3>技术先进性</h3>
+            <div class="advantage-card">
+              <h4>多模型深度协同</h4>
+              <p>统一分子表示与接口标准，五大模型无缝衔接，AI 调度实现一站式“设计即实验”。</p>
+              <ul>
+                <li>标准化数据接口与流程自动编排</li>
+                <li>减少人工翻译与重复试错</li>
+              </ul>
+            </div>
+            <div class="advantage-card">
+              <h4>方案落地性强</h4>
+              <p>从路径规划到实验条件、光谱验证全覆盖，交付结果即为可执行的实验方案。</p>
+              <ul>
+                <li>工艺参数细化至试剂用量、操作步骤</li>
+                <li>虚拟光谱与量子校验提升可信度</li>
+              </ul>
+            </div>
+            <div class="advantage-card">
+              <h4>仿真 + 实验双验证</h4>
+              <p>量子精算与光谱预测前置筛选不合理方案，保障设计科学严谨。</p>
+              <ul>
+                <li>量子级热力学/动力学评估</li>
+                <li>光谱匹配确保结构可确证</li>
+              </ul>
+            </div>
+            <div class="advantage-card">
+              <h4>智能交互体验</h4>
+              <p>LLM 提供专家级解释、报告与建议，降低跨部门协作门槛。</p>
+              <ul>
+                <li>自然语言问答 + 多模态可视化</li>
+                <li>根据反馈自动重构实验路线</li>
+              </ul>
+            </div>
+          </div>
+          <div class="advantage-column">
+            <h3>技术壁垒</h3>
+            <div class="advantage-card">
+              <h4>多模型协同机制</h4>
+              <p>跨学科算法融合与接口标准化，需要长周期系统工程积累。</p>
+              <ul>
+                <li>五层中间层与 LLM 协同经验沉淀</li>
+                <li>可插拔模块扩展但保持一致性</li>
+              </ul>
+            </div>
+            <div class="advantage-card">
+              <h4>LLM 调度智能体</h4>
+              <p>针对化学任务定制的提示工程与强化学习，形成难以复制的知识资产。</p>
+              <ul>
+                <li>持续吸收真实项目反馈迭代</li>
+                <li>复杂问题分解与工具组合能力</li>
+              </ul>
+            </div>
+            <div class="advantage-card">
+              <h4>闭环数据与验证体系</h4>
+              <p>实验反馈驱动模型优化，数据越积累越精准，构成正向循环。</p>
+              <ul>
+                <li>虚拟验证 + 实验结果联合校准</li>
+                <li>客户沉淀数据保障迁移壁垒</li>
+              </ul>
+            </div>
+            <div class="advantage-card">
+              <h4>跨场景可扩展性</h4>
+              <p>模块化架构易于迁移到材料、合成生物、临床前评估等新领域。</p>
+              <ul>
+                <li>快速接入新模型与硬件实验平台</li>
+                <li>支持私有化、混合云与本地部署</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="competition" class="section competition">
+        <div class="section-header">
+          <h2>竞品对比与差异化价值</h2>
+          <p>
+            与国内外主流化合物研发平台相比，SynthAI 以多模型协同、闭环验证与智能调度脱颖而出，为药物研发提供可落地的一体化解决方案。
+          </p>
+        </div>
+        <div class="table-wrapper">
+          <table>
+            <thead>
+              <tr>
+                <th>维度</th>
+                <th>SynthAI</th>
+                <th>晶泰科技</th>
+                <th>燧坤智能</th>
+                <th>蓝晶微生物</th>
+                <th>分子之心</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>核心定位</td>
+                <td>AI 化合物设计-合成-验证全流程平台</td>
+                <td>AI+量子物理+机器人药物研发服务</td>
+                <td>AI 驱动先导发现与虚拟筛选</td>
+                <td>合成生物“细胞工厂”与发酵工艺</td>
+                <td>蛋白质结构预测与大分子设计</td>
+              </tr>
+              <tr>
+                <td>模型能力</td>
+                <td>SynFormer/FlowER/QUARC/ML-DFT/ICEBERG + LLM</td>
+                <td>量子化学模拟与自动化实验平台</td>
+                <td>图神经网络 + 生成式算法</td>
+                <td>代谢路径设计与菌种优化</td>
+                <td>深度学习蛋白生成与优化</td>
+              </tr>
+              <tr>
+                <td>实验落地</td>
+                <td>自动输出可执行工艺与光谱验证</td>
+                <td>自建机器人实验室完成验证</td>
+                <td>依赖合作 CRO/客户实验</td>
+                <td>生物发酵生产线</td>
+                <td>不涉及有机合成实验</td>
+              </tr>
+              <tr>
+                <td>智能协同</td>
+                <td>LLM 智能体统筹模型与流程</td>
+                <td>领域模型指挥自动化实验</td>
+                <td>多算法模块，缺少统一调度</td>
+                <td>专注生物途径优化</td>
+                <td>聚焦大分子单一任务</td>
+              </tr>
+              <tr>
+                <td>优势/短板</td>
+                <td>闭环验证、落地性强，支持私有化部署</td>
+                <td>行业资源丰富，但交互与灵活性较弱</td>
+                <td>虚拟筛选见长，实验闭环欠缺</td>
+                <td>绿色生产优势，分子多样性受限</td>
+                <td>大分子领先，小分子合成能力缺失</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="competition-note">
+          <strong>生态协同：</strong>药研社等临床协同平台可与 SynthAI 形成上下游合作，助力候选药物快速进入临床阶段。
+        </p>
+      </section>
+
+      <section id="contact" class="section contact">
+        <div class="section-header">
+          <h2>预约演示 · 共建化合物创新能力</h2>
+          <p>告诉我们您的研发目标，SynthAI 团队将提供专属试用与联合攻关方案。</p>
+        </div>
+        <form class="contact-form">
+          <div class="form-grid">
+            <label>
+              <span>姓名</span>
+              <input type="text" name="name" placeholder="请输入姓名" required />
+            </label>
+            <label>
+              <span>公司/机构</span>
+              <input type="text" name="company" placeholder="请输入公司名称" required />
+            </label>
+            <label>
+              <span>联系方式</span>
+              <input type="tel" name="phone" placeholder="手机号或邮箱" required />
+            </label>
+            <label>
+              <span>职务</span>
+              <input type="text" name="title" placeholder="例如：研发总监" />
+            </label>
+            <label class="full-width">
+              <span>合作需求</span>
+              <textarea name="message" rows="4" placeholder="请描述目标化合物、痛点或期望落地场景"></textarea>
+            </label>
+          </div>
+          <button type="submit" class="btn primary">提交需求</button>
+          <p class="form-tip">提交即代表您已阅读并同意《隐私政策》</p>
+        </form>
+      </section>
+    </main>
+
+    <section class="app-overlay" aria-hidden="true">
+      <div class="app-window" role="dialog" aria-modal="true" aria-label="SynthAI 用户界面">
+        <header class="app-header">
+          <div>
+            <p class="app-label">SynthAI 化学工作台</p>
+            <h3>KRAS 抑制剂 · 中间体合成项目</h3>
+            <p class="app-subtext">目标：压缩 4 步路线周期，降低成本 30%，提升纯度至 99.2%</p>
+          </div>
+          <div class="app-header-actions">
+            <span class="badge online">LLM Agent 在线</span>
+            <span class="badge">安全沙盒</span>
+            <button class="app-close" type="button" aria-label="关闭用户界面">×</button>
+          </div>
+        </header>
+        <div class="app-layout">
+          <aside class="app-sidebar">
+            <section class="sidebar-section">
+              <h4>项目目标</h4>
+              <p>合成批量：10 g · 交付周期：7 天</p>
+              <ul class="tag-list">
+                <li>QSAR 已通过</li>
+                <li>需保障 EHS</li>
+                <li>放大兼容</li>
+              </ul>
+            </section>
+            <section class="sidebar-section">
+              <h4>功能模块</h4>
+              <div class="module-list">
+                <button
+                  class="module-item active"
+                  data-title="SynFormer · 智能化合物设计"
+                  data-desc="生成满足活性与可合成性双重约束的候选分子库，并返回 Top 50 路线"
+                  data-metrics="候选通过率 100% | RO5 合规 92%"
+                >
+                  SynFormer
+                </button>
+                <button
+                  class="module-item"
+                  data-title="FlowER · 反应机理推演"
+                  data-desc="基于电子守恒的流匹配算法，输出分步机理、电子转移路径与杂质来源"
+                  data-metrics="机理可信度 0.93 | 幻觉率 &lt; 0.2%"
+                >
+                  FlowER
+                </button>
+                <button
+                  class="module-item"
+                  data-title="ML-DFT · 量子性质仿真"
+                  data-desc="机器学习代理替代昂贵 DFT，提供热力学/动力学指标与电子云可视化"
+                  data-metrics="能垒预测 MAE 0.18 kcal/mol"
+                >
+                  ML-DFT
+                </button>
+                <button
+                  class="module-item"
+                  data-title="QUARC · 实验方案推荐"
+                  data-desc="一键生成催化剂、溶剂、温度与当量，支持敏感性分析与替代方案"
+                  data-metrics="放大命中率 87%"
+                >
+                  QUARC
+                </button>
+                <button
+                  class="module-item"
+                  data-title="ICEBERG · 光谱预测"
+                  data-desc="输出 MS/MS 多能量光谱、碎片注释，并与实验谱进行相似度匹配"
+                  data-metrics="谱图余弦相似度 0.91"
+                >
+                  ICEBERG
+                </button>
+                <button
+                  class="module-item"
+                  data-title="迭代优化工作台"
+                  data-desc="整合产率、杂质、谱图偏差数据，联动多模型给出迭代优化策略"
+                  data-metrics="优化迭代周期 24 h"
+                >
+                  迭代优化
+                </button>
+                <button
+                  class="module-item"
+                  data-title="数据管理与协作"
+                  data-desc="集中存储结构、机理、谱图与专利检索结果，支持权限与版本管理"
+                  data-metrics="访问权限 5 级"
+                >
+                  数据协作
+                </button>
+              </div>
+            </section>
+            <section class="sidebar-section">
+              <h4>实验排程</h4>
+              <ul class="timeline">
+                <li>
+                  <span>09:00</span>
+                  <p>自动合成机器人预占 · Pd 配体筛选</p>
+                </li>
+                <li>
+                  <span>14:30</span>
+                  <p>放大验证批次 · 目标产率 ≥78%</p>
+                </li>
+                <li>
+                  <span>20:00</span>
+                  <p>ICEBERG 谱图校验 · 上传 LC-MS 数据</p>
+                </li>
+              </ul>
+            </section>
+          </aside>
+          <section class="app-main">
+            <div class="module-detail">
+              <div>
+                <p class="detail-label">当前模块</p>
+                <h4 class="module-detail-title">SynFormer · 智能化合物设计</h4>
+                <p class="module-detail-desc">
+                  生成满足活性与可合成性双重约束的候选分子库，并返回 Top 50 路线
+                </p>
+              </div>
+              <div class="module-detail-meta">
+                <span class="metric-value module-detail-metrics">候选通过率 100% | RO5 合规 92%</span>
+                <button class="btn ghost" type="button">推送给 FlowER</button>
+              </div>
+            </div>
+            <div class="pipeline-board">
+              <article>
+                <h5>SynFormer</h5>
+                <p>12 条候选路线</p>
+                <span class="status success">完成</span>
+              </article>
+              <article>
+                <h5>FlowER</h5>
+                <p>守恒校验通过</p>
+                <span class="status success">完成</span>
+              </article>
+              <article>
+                <h5>ML-DFT</h5>
+                <p>ΔG‡ = 16.2 kcal/mol</p>
+                <span class="status warning">计算中</span>
+              </article>
+              <article>
+                <h5>QUARC</h5>
+                <p>条件推荐 3 套</p>
+                <span class="status pending">待确认</span>
+              </article>
+              <article>
+                <h5>ICEBERG</h5>
+                <p>谱图余弦 0.91</p>
+                <span class="status success">完成</span>
+              </article>
+            </div>
+            <div class="result-grid">
+              <article class="result-card">
+                <header>
+                  <h5>候选分子</h5>
+                  <button type="button" class="link-btn">导出 SDF</button>
+                </header>
+                <ul class="molecule-list">
+                  <li>
+                    <strong>Syn-24A</strong>
+                    <span>c1ccc(CCNC(=O)...)</span>
+                    <span class="badge">合成步数 4</span>
+                  </li>
+                  <li>
+                    <strong>Syn-31B</strong>
+                    <span>O=C(NC)C1=CC=C...</span>
+                    <span class="badge">LogP 3.1</span>
+                  </li>
+                  <li>
+                    <strong>Syn-02X</strong>
+                    <span>CC(C)(C)OC1=...</span>
+                    <span class="badge">RO5 合规</span>
+                  </li>
+                </ul>
+              </article>
+              <article class="result-card">
+                <header>
+                  <h5>反应机理</h5>
+                  <span>FlowER 输出</span>
+                </header>
+                <ol class="reaction-steps">
+                  <li>Step 1：Suzuki 偶联 · 电子流 π→σ</li>
+                  <li>Step 2：酰胺化 · 形成关键中间体 M2</li>
+                  <li>Step 3：分子内环合 · 保持质量守恒</li>
+                  <li>Step 4：去保护 · 杂质来源 I-12</li>
+                </ol>
+              </article>
+              <article class="result-card">
+                <header>
+                  <h5>实验条件推荐</h5>
+                  <span>QUARC 版本 3.2</span>
+                </header>
+                <ul class="condition-list">
+                  <li><strong>Pd(PPh<sub>3</sub>)<sub>4</sub> 3 mol%</strong> · K<sub>2</sub>CO<sub>3</sub> 2 eq</li>
+                  <li><strong>溶剂：</strong>THF/H<sub>2</sub>O (4:1)，0.2 M</li>
+                  <li><strong>温度：</strong>75 ℃ · 6 h，氮气保护</li>
+                  <li><strong>后处理：</strong>萃取 + 硅胶柱，Rf 0.42</li>
+                </ul>
+              </article>
+              <article class="result-card spectrum">
+                <header>
+                  <h5>ICEBERG 光谱预览</h5>
+                  <span>余弦 0.91</span>
+                </header>
+                <div class="spectrum-chart">
+                  <div style="height: 65%;"></div>
+                  <div style="height: 40%;"></div>
+                  <div style="height: 85%;"></div>
+                  <div style="height: 55%;"></div>
+                  <div style="height: 30%;"></div>
+                  <div style="height: 70%;"></div>
+                </div>
+                <p class="spectrum-note">高强度 m/z 482.1、224.0、162.1 与实验谱匹配。</p>
+              </article>
+            </div>
+            <div class="assistant-panel">
+              <div>
+                <h5>LLM 智能体协作</h5>
+                <ul class="assistant-log">
+                  <li>
+                    <strong>用户：</strong>降低步骤 2 的能垒并控制副产物 I-12。
+                  </li>
+                  <li>
+                    <strong>Agent：</strong>建议替换配体为 XPhos，溶剂切换为 1,4-二氧六环，预计能垒下降 1.8 kcal/mol。
+                  </li>
+                  <li>
+                    <strong>Agent：</strong>已触发 ML-DFT 重算并同步 QUARC，等待谱图复核。
+                  </li>
+                </ul>
+              </div>
+              <form class="assistant-input">
+                <label>
+                  <span>指令</span>
+                  <input type="text" placeholder="输入指令，如：分析杂质来源" />
+                </label>
+                <button type="button" class="btn primary">发送</button>
+              </form>
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <div>
+          <div class="logo">SynthAI</div>
+          <p>© 2025 SynthAI. All rights reserved.</p>
+        </div>
+        <ul class="footer-links">
+          <li><a href="#overview">项目概述</a></li>
+          <li><a href="#solution">解决方案</a></li>
+          <li><a href="#technology">技术架构</a></li>
+          <li><a href="#contact">联系合作</a></li>
+        </ul>
+      </div>
+      <a class="back-to-top" href="#top" aria-label="返回顶部">↑</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
