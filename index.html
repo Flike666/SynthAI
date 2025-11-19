@@ -42,6 +42,7 @@
           <div class="hero-actions">
             <a class="btn primary" href="#solution">了解全流程方案</a>
             <a class="btn secondary" href="#technology">查看技术架构</a>
+            <button class="btn accent try-btn" type="button">点击试用SynthAI</button>
           </div>
           <ul class="hero-highlights">
             <li><strong>60%</strong> 合成周期缩短</li>
@@ -487,6 +488,243 @@
         </form>
       </section>
     </main>
+
+    <section class="app-overlay" aria-hidden="true">
+      <div class="app-window" role="dialog" aria-modal="true" aria-label="SynthAI 用户界面">
+        <header class="app-header">
+          <div>
+            <p class="app-label">SynthAI 化学工作台</p>
+            <h3>KRAS 抑制剂 · 中间体合成项目</h3>
+            <p class="app-subtext">目标：压缩 4 步路线周期，降低成本 30%，提升纯度至 99.2%</p>
+          </div>
+          <div class="app-header-actions">
+            <span class="badge online">LLM Agent 在线</span>
+            <span class="badge">安全沙盒</span>
+            <button class="app-close" type="button" aria-label="关闭用户界面">×</button>
+          </div>
+        </header>
+        <div class="app-layout">
+          <aside class="app-sidebar">
+            <section class="sidebar-section">
+              <h4>项目目标</h4>
+              <p>合成批量：10 g · 交付周期：7 天</p>
+              <ul class="tag-list">
+                <li>QSAR 已通过</li>
+                <li>需保障 EHS</li>
+                <li>放大兼容</li>
+              </ul>
+            </section>
+            <section class="sidebar-section">
+              <h4>功能模块</h4>
+              <div class="module-list">
+                <button
+                  class="module-item active"
+                  data-title="SynFormer · 智能化合物设计"
+                  data-desc="生成满足活性与可合成性双重约束的候选分子库，并返回 Top 50 路线"
+                  data-metrics="候选通过率 100% | RO5 合规 92%"
+                >
+                  SynFormer
+                </button>
+                <button
+                  class="module-item"
+                  data-title="FlowER · 反应机理推演"
+                  data-desc="基于电子守恒的流匹配算法，输出分步机理、电子转移路径与杂质来源"
+                  data-metrics="机理可信度 0.93 | 幻觉率 &lt; 0.2%"
+                >
+                  FlowER
+                </button>
+                <button
+                  class="module-item"
+                  data-title="ML-DFT · 量子性质仿真"
+                  data-desc="机器学习代理替代昂贵 DFT，提供热力学/动力学指标与电子云可视化"
+                  data-metrics="能垒预测 MAE 0.18 kcal/mol"
+                >
+                  ML-DFT
+                </button>
+                <button
+                  class="module-item"
+                  data-title="QUARC · 实验方案推荐"
+                  data-desc="一键生成催化剂、溶剂、温度与当量，支持敏感性分析与替代方案"
+                  data-metrics="放大命中率 87%"
+                >
+                  QUARC
+                </button>
+                <button
+                  class="module-item"
+                  data-title="ICEBERG · 光谱预测"
+                  data-desc="输出 MS/MS 多能量光谱、碎片注释，并与实验谱进行相似度匹配"
+                  data-metrics="谱图余弦相似度 0.91"
+                >
+                  ICEBERG
+                </button>
+                <button
+                  class="module-item"
+                  data-title="迭代优化工作台"
+                  data-desc="整合产率、杂质、谱图偏差数据，联动多模型给出迭代优化策略"
+                  data-metrics="优化迭代周期 24 h"
+                >
+                  迭代优化
+                </button>
+                <button
+                  class="module-item"
+                  data-title="数据管理与协作"
+                  data-desc="集中存储结构、机理、谱图与专利检索结果，支持权限与版本管理"
+                  data-metrics="访问权限 5 级"
+                >
+                  数据协作
+                </button>
+              </div>
+            </section>
+            <section class="sidebar-section">
+              <h4>实验排程</h4>
+              <ul class="timeline">
+                <li>
+                  <span>09:00</span>
+                  <p>自动合成机器人预占 · Pd 配体筛选</p>
+                </li>
+                <li>
+                  <span>14:30</span>
+                  <p>放大验证批次 · 目标产率 ≥78%</p>
+                </li>
+                <li>
+                  <span>20:00</span>
+                  <p>ICEBERG 谱图校验 · 上传 LC-MS 数据</p>
+                </li>
+              </ul>
+            </section>
+          </aside>
+          <section class="app-main">
+            <div class="module-detail">
+              <div>
+                <p class="detail-label">当前模块</p>
+                <h4 class="module-detail-title">SynFormer · 智能化合物设计</h4>
+                <p class="module-detail-desc">
+                  生成满足活性与可合成性双重约束的候选分子库，并返回 Top 50 路线
+                </p>
+              </div>
+              <div class="module-detail-meta">
+                <span class="metric-value module-detail-metrics">候选通过率 100% | RO5 合规 92%</span>
+                <button class="btn ghost" type="button">推送给 FlowER</button>
+              </div>
+            </div>
+            <div class="pipeline-board">
+              <article>
+                <h5>SynFormer</h5>
+                <p>12 条候选路线</p>
+                <span class="status success">完成</span>
+              </article>
+              <article>
+                <h5>FlowER</h5>
+                <p>守恒校验通过</p>
+                <span class="status success">完成</span>
+              </article>
+              <article>
+                <h5>ML-DFT</h5>
+                <p>ΔG‡ = 16.2 kcal/mol</p>
+                <span class="status warning">计算中</span>
+              </article>
+              <article>
+                <h5>QUARC</h5>
+                <p>条件推荐 3 套</p>
+                <span class="status pending">待确认</span>
+              </article>
+              <article>
+                <h5>ICEBERG</h5>
+                <p>谱图余弦 0.91</p>
+                <span class="status success">完成</span>
+              </article>
+            </div>
+            <div class="result-grid">
+              <article class="result-card">
+                <header>
+                  <h5>候选分子</h5>
+                  <button type="button" class="link-btn">导出 SDF</button>
+                </header>
+                <ul class="molecule-list">
+                  <li>
+                    <strong>Syn-24A</strong>
+                    <span>c1ccc(CCNC(=O)...)</span>
+                    <span class="badge">合成步数 4</span>
+                  </li>
+                  <li>
+                    <strong>Syn-31B</strong>
+                    <span>O=C(NC)C1=CC=C...</span>
+                    <span class="badge">LogP 3.1</span>
+                  </li>
+                  <li>
+                    <strong>Syn-02X</strong>
+                    <span>CC(C)(C)OC1=...</span>
+                    <span class="badge">RO5 合规</span>
+                  </li>
+                </ul>
+              </article>
+              <article class="result-card">
+                <header>
+                  <h5>反应机理</h5>
+                  <span>FlowER 输出</span>
+                </header>
+                <ol class="reaction-steps">
+                  <li>Step 1：Suzuki 偶联 · 电子流 π→σ</li>
+                  <li>Step 2：酰胺化 · 形成关键中间体 M2</li>
+                  <li>Step 3：分子内环合 · 保持质量守恒</li>
+                  <li>Step 4：去保护 · 杂质来源 I-12</li>
+                </ol>
+              </article>
+              <article class="result-card">
+                <header>
+                  <h5>实验条件推荐</h5>
+                  <span>QUARC 版本 3.2</span>
+                </header>
+                <ul class="condition-list">
+                  <li><strong>Pd(PPh<sub>3</sub>)<sub>4</sub> 3 mol%</strong> · K<sub>2</sub>CO<sub>3</sub> 2 eq</li>
+                  <li><strong>溶剂：</strong>THF/H<sub>2</sub>O (4:1)，0.2 M</li>
+                  <li><strong>温度：</strong>75 ℃ · 6 h，氮气保护</li>
+                  <li><strong>后处理：</strong>萃取 + 硅胶柱，Rf 0.42</li>
+                </ul>
+              </article>
+              <article class="result-card spectrum">
+                <header>
+                  <h5>ICEBERG 光谱预览</h5>
+                  <span>余弦 0.91</span>
+                </header>
+                <div class="spectrum-chart">
+                  <div style="height: 65%;"></div>
+                  <div style="height: 40%;"></div>
+                  <div style="height: 85%;"></div>
+                  <div style="height: 55%;"></div>
+                  <div style="height: 30%;"></div>
+                  <div style="height: 70%;"></div>
+                </div>
+                <p class="spectrum-note">高强度 m/z 482.1、224.0、162.1 与实验谱匹配。</p>
+              </article>
+            </div>
+            <div class="assistant-panel">
+              <div>
+                <h5>LLM 智能体协作</h5>
+                <ul class="assistant-log">
+                  <li>
+                    <strong>用户：</strong>降低步骤 2 的能垒并控制副产物 I-12。
+                  </li>
+                  <li>
+                    <strong>Agent：</strong>建议替换配体为 XPhos，溶剂切换为 1,4-二氧六环，预计能垒下降 1.8 kcal/mol。
+                  </li>
+                  <li>
+                    <strong>Agent：</strong>已触发 ML-DFT 重算并同步 QUARC，等待谱图复核。
+                  </li>
+                </ul>
+              </div>
+              <form class="assistant-input">
+                <label>
+                  <span>指令</span>
+                  <input type="text" placeholder="输入指令，如：分析杂质来源" />
+                </label>
+                <button type="button" class="btn primary">发送</button>
+              </form>
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
 
     <footer class="footer">
       <div class="footer-content">

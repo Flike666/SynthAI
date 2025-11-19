@@ -24,3 +24,37 @@ form?.addEventListener('submit', (event) => {
   alert(summary);
   form.reset();
 });
+
+const tryBtn = document.querySelector('.try-btn');
+const appOverlay = document.querySelector('.app-overlay');
+const appClose = document.querySelector('.app-close');
+
+const toggleOverlay = (visible) => {
+  if (!appOverlay) return;
+  appOverlay.classList.toggle('active', visible);
+  document.body.classList.toggle('no-scroll', visible);
+  appOverlay.setAttribute('aria-hidden', (!visible).toString());
+};
+
+tryBtn?.addEventListener('click', () => toggleOverlay(true));
+appClose?.addEventListener('click', () => toggleOverlay(false));
+appOverlay?.addEventListener('click', (event) => {
+  if (event.target === appOverlay) toggleOverlay(false);
+});
+
+const moduleItems = document.querySelectorAll('.module-item');
+const moduleTitle = document.querySelector('.module-detail-title');
+const moduleDesc = document.querySelector('.module-detail-desc');
+const moduleMetrics = document.querySelector('.module-detail-metrics');
+
+if (moduleItems.length && moduleTitle && moduleDesc && moduleMetrics) {
+  moduleItems.forEach((item) => {
+    item.addEventListener('click', () => {
+      moduleItems.forEach((button) => button.classList.remove('active'));
+      item.classList.add('active');
+      moduleTitle.textContent = item.dataset.title || moduleTitle.textContent;
+      moduleDesc.textContent = item.dataset.desc || moduleDesc.textContent;
+      moduleMetrics.textContent = item.dataset.metrics || moduleMetrics.textContent;
+    });
+  });
+}
